@@ -1,0 +1,53 @@
+\documentclass[a4j,11pt]{jsarticle}
+\hyphenation{Ghost-script Post-Script}
+\usepackage[top=25truemm,bottom=21truemm,left=21truemm,right=21truemm]{geometry}
+\usepackage{okumacro}
+\usepackage{wrapfig}
+\usepackage[explicit]{titlesec}
+\usepackage[dvipdfmx]{graphicx,color}
+\usepackage{indent}
+\usepackage{ascmac}
+\usepackage{newtxtext,newtxmath}
+\usepackage{listings, jlisting}
+
+\lstset{%
+  language=C++,
+  breaklines=true,
+  basicstyle={\ttfamily},
+  %identifierstyle={\ttfamily \color[rgb]{}},
+  frame=shadowbox,
+  columns=[l]{fullflexible},
+  keywordstyle={\bfseries \color[rgb]{0.7, 0.2, 0.2}},
+  stringstyle={\ttfamily \color[rgb]{0,0,1}},
+  commentstyle={\ttfamily \color[rgb]{0.3, 0.6, 0.3}},
+  lineskip=-0.5zw,
+  keepspaces=true,
+  showstringspaces=false,
+  showtabs=false,
+  numbers=left,
+  %numberstyle={\scriptsize},
+  framexleftmargin=7.7mm,
+  xleftmargin=7.7mm,
+  tabsize=4,
+}
+\lstset{
+  morekeywords={constexpr,noexcept,static_assert,decltype,nullptr}
+}
+\renewcommand{\thelstnumber}{\arabic{lstnumber}:}
+\renewcommand\lstlistingname{Source Code}
+
+
+\renewcommand\thefootnote{*\arabic{footnote}}
+\usepackage{titlesec}
+
+%\pagestyle{empty}
+
+\title{}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\end{document}
