@@ -1,11 +1,10 @@
 \documentclass[b5j,twocolumn,9pt,leqno,fleqn]{jsarticle}
-\usepackage[top=25truemm,bottom=21truemm,left=21truemm,right=21truemm]{geometry}
+\usepackage[driver=dvipdfm,top=25truemm,bottom=21truemm,left=21truemm,right=21truemm]{geometry}
 \usepackage{okumacro}
 \usepackage{wrapfig}
 \usepackage[dvipdfmx]{graphicx,color}
 \usepackage{indent}
 \usepackage{ascmac}
-\usepackage{newtxtext,newtxmath}
 
 \usepackage{amsthm}
 \newtheorem{definision}{定義}
@@ -14,7 +13,13 @@
 \newtheorem{lemma}[proposition]{補題}
 \renewcommand{\qedsymbol}{Q.E.D.}
 
+%must load after amsthm package
+\usepackage{newtxtext,newtxmath}
+
 \usepackage{amscd}
+
+%不要ならコメントアウト
+\usepackage{emath}
 
 \renewcommand\thefootnote{*\arabic{footnote}}
 
