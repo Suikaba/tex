@@ -1,0 +1,58 @@
+\documentclass[dvipdfmx]{beamer}
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\usepackage{minijs}
+\usepackage{newtxtext,newtxmath}
+
+\usetheme{Madrid}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{frametitle}{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[page number]
+\setbeamerfont{footline}{size=\small,series=\bfseries}
+\setbeamercolor{footline}{fg=black,bg=black}
+\setbeamertemplate{transparent}
+
+\AtBeginSection[]{
+    \frame{\tableofcontents[currentsection, hideallsubsections]}
+}
+
+\usepackage{listings, jlisting}
+
+\lstset{%
+  language=C++,
+  breaklines=true,
+  basicstyle={\ttfamily},
+  %identifierstyle={\ttfamily \color[rgb]{}},
+  frame=lines,
+  columns=[l]{fullflexible},
+  keywordstyle={\bfseries \color[rgb]{0.7, 0.2, 0.2}},
+  stringstyle={\ttfamily \color[rgb]{0,0,1}},
+  commentstyle={\ttfamily \color[rgb]{0.3, 0.6, 0.3}},
+  lineskip=-0.3zw,
+  keepspaces=true,
+  showstringspaces=false,
+  showtabs=false,
+  %numbers=left,
+  %numberstyle={\scriptsize},
+  %framexleftmargin=7.7mm,
+  %xleftmargin=7.7mm,
+  tabsize=4,
+}
+\lstset{
+  morekeywords={constexpr,noexcept,static_assert,decltype,nullptr}
+}
+
+
+\title{}
+\subtitle{}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{frame}[plain]\frametitle{}
+\titlepage
+\end{frame}
+
+\end{document}
